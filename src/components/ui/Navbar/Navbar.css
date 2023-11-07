@@ -1,0 +1,26 @@
+.navbar-brand{
+    color: #2a70e0;
+    white-space: nowrap;
+    font-weight: bolder;
+}
+
+.nav-link:hover{
+    color: rgb(97, 160, 255);
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+}
+
+.bg-light{
+    background-color: #eaf4ff !important;
+}
+
+.btn{
+    background-color: #2675c9;
+}
+
+.sticky-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
+}

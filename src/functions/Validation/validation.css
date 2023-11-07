@@ -1,0 +1,9 @@
+.error{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+label{
+    display: inline-block;
+    padding-inline-end: 10px;
+}
