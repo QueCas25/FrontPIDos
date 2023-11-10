@@ -1,0 +1,87 @@
+/* Estilo para el contenedor principal */
+.MDBContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200vh;
+    background-image: url('img1.jpg');
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+  }
+  
+  /* Estilo para el fondo del formulario */
+  .bg-cv {
+    position: absolute;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(136, 15, 184, 0.938);
+    /*box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);*/
+    
+    left: 50%;
+    transform: translateX(-50%);
+    width: 25%;
+    height: 550px;
+  }
+  
+  /* Estilo para el título del formulario */
+  h3 {
+    font-weight: bold;
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: purple;
+  }
+  
+  /* Estilo para los campos de entrada y etiquetas */
+  label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: purple;
+  }
+  
+  /* Estilo para los campos de entrada */
+  input[type="input"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    
+  }
+  
+  /* Estilo para el botón de registro */
+  .MDBBtn {
+    background-color: #00ff9d;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    cursor: pointer;
+  }
+  
+  /* Estilo para el botón de registro al pasar el mouse */
+  .MDBBtn:hover {
+    background-color: #00b32d;
+  }
+  
+  /* Estilo para los mensajes de error */
+  .error-message {
+    color: red;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+
+  .textoCuenta{
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  /*.form-row{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid#fff;
+  }
+  */
