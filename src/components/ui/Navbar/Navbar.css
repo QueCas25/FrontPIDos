@@ -1,20 +1,20 @@
 .navbar-brand{
-    color: #2a70e0;
+    color: purple;
     white-space: nowrap;
     font-weight: bolder;
 }
 
 .nav-link:hover{
-    color: rgb(97, 160, 255);
+    color: #d960ee;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
 }
 
 .bg-light{
-    background-color: #eaf4ff !important;
+    background-color: #dd7aee !important;
 }
 
 .btn{
-    background-color: #2675c9;
+    background-color: #dd7aee;
 }
 
 .sticky-navbar {
@@ -23,4 +23,8 @@
     left: 0;
     right: 0;
     z-index: 999;
+}
+
+.mr-auto{
+    color: white;
 }

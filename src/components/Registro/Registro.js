@@ -42,7 +42,7 @@ function Registrar() {
                             <Form>
                                     <div className="form-row">            
                                     <CustomInput
-                                        className="input-field"
+                                        className='input-field'
                                         label="Nombre"
                                         name="name"
                                         type="input"
@@ -51,7 +51,7 @@ function Registrar() {
                                     <div/>
                                     <div className="form-row">  
                                     <CustomInput
-                                    className="input-field"
+                                        className='input-field'
                                         label="Correo"
                                         name="email"
                                         type="input"
@@ -60,7 +60,7 @@ function Registrar() {
                                     <div/>
                                     <div className="form-row">  
                                     <CustomInput
-                                    className="input-field"
+                                        className='input-field'
                                         label="Contraseña"
                                         name="password"
                                         type="input"
@@ -69,7 +69,7 @@ function Registrar() {
                                     <div/>
                                     <div className="form-row">  
                                     <CustomInput
-                                    className="input-field"
+                                        className='input-field'
                                         label="Confirme Contraseña"
                                         name="confirmPassword"
                                         type="input"

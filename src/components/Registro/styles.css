@@ -33,27 +33,26 @@
     color: purple;
   }
   
-  /* Estilo para los campos de entrada y etiquetas */
-  label {
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: purple;
-  }
-  
-  /* Estilo para los campos de entrada */
-  input[type="input"] {
+
+ 
+
+  input.input-field{
     width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     margin-bottom: 15px;
-    
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: purple;
+
   }
   
-  /* Estilo para el botón de registro */
+
+
   .MDBBtn {
     background-color: #00ff9d;
-    color: #fff;
+    color: rgb(168, 29, 29);
     font-weight: bold;
     border: none;
     border-radius: 5px;
@@ -61,12 +60,11 @@
     cursor: pointer;
   }
   
-  /* Estilo para el botón de registro al pasar el mouse */
+
   .MDBBtn:hover {
     background-color: #00b32d;
   }
-  
-  /* Estilo para los mensajes de error */
+
   .error-message {
     color: red;
     font-size: 12px;
@@ -76,12 +74,6 @@
   .textoCuenta{
     font-weight: bold;
     margin-bottom: 5px;
+    color: purple;
   }
   
-  /*.form-row{
-    position: relative;
-    margin: 30px 0;
-    width: 310px;
-    border-bottom: 2px solid#fff;
-  }
-  */

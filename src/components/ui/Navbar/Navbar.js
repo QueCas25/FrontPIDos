@@ -77,7 +77,7 @@ export default function Navbar(){
                                     <MDBDropdownItem link>{user.userEmail}</MDBDropdownItem>
                                     <MDBDropdownItem link>Informacion Personal</MDBDropdownItem>
                                     <MDBDropdownItem link>{user.tier >= 0 ? <Link to={'/vacantesCreadas'} target="_self">Panel de Control</Link>:<Link to={'/vacantesAplicadas'} target="_self">Resumen Contrato</Link>}</MDBDropdownItem>
-                                    <MDBDropdownItem link onClick={cerrarSesion}>Cerrar Sesion</MDBDropdownItem>
+                                    <MDBDropdownItem link onClick={cerrarSesion}>Cerrar Sesión</MDBDropdownItem>
                                 </MDBDropdownMenu>
                             </MDBDropdown>
                         </MDBNavbarItem>

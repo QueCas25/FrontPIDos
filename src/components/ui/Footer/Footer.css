@@ -11,9 +11,9 @@ footer {
     text-align: Center;
     position: fixed;
     bottom: 0;
-    color: rgb(100, 99, 99);
+    color: purple;
 }
 
 footer:hover{
-    color: #2a70e0;
+    color: purple;
 }
