@@ -1,9 +1,13 @@
 .navbar-brand{
-    color: purple;
+    color: white;
     white-space: nowrap;
     font-weight: bolder;
 }
 
+.nav-link{
+    color: white;
+    font-weight: bold;
+}
 .nav-link:hover{
     color: #d960ee;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
@@ -27,4 +31,9 @@
 
 .mr-auto{
     color: white;
+}
+
+.navbar-item-text {
+    color: white;
+    font-weight: bold;
 }

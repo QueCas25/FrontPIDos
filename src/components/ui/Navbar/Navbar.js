@@ -62,22 +62,22 @@ export default function Navbar(){
                 <MDBCollapse navbar show={showBasic}>
                     <MDBNavbarNav className='mr-auto mb-2 mb-lg-0'>
                         <MDBNavbarItem>
-                            <MDBNavbarLink  href='/inicio'>Inicio</MDBNavbarLink>
+                            <MDBNavbarLink className='navbar-item-text' href='/inicio'>Inicio</MDBNavbarLink>
                         </MDBNavbarItem>
                         <MDBNavbarItem>
-                            <MDBNavbarLink href='/vacantes'>Habitaciones</MDBNavbarLink>
+                            <MDBNavbarLink className='navbar-item-text' href='/vacantes'>Habitaciones</MDBNavbarLink>
                         </MDBNavbarItem>
 
                         <MDBNavbarItem>
                             <MDBDropdown>
-                                <MDBDropdownToggle tag='a' className='nav-link' role='button'>
+                                <MDBDropdownToggle  tag='a' className='nav-link' role='button'>
                                     Perfil
                                 </MDBDropdownToggle>
                                 <MDBDropdownMenu>
                                     <MDBDropdownItem link>{user.userEmail}</MDBDropdownItem>
-                                    <MDBDropdownItem link>Informacion Personal</MDBDropdownItem>
-                                    <MDBDropdownItem link>{user.tier >= 0 ? <Link to={'/vacantesCreadas'} target="_self">Panel de Control</Link>:<Link to={'/vacantesAplicadas'} target="_self">Resumen Contrato</Link>}</MDBDropdownItem>
-                                    <MDBDropdownItem link onClick={cerrarSesion}>Cerrar Sesión</MDBDropdownItem>
+                                    <MDBDropdownItem link><b>Informacion Personal</b></MDBDropdownItem>
+                                    <MDBDropdownItem link>{user.tier >= 0 ? <Link to={'/vacantesCreadas'} target="_self"><b>Panel de Control</b></Link>:<Link to={'/vacantesAplicadas'} target="_self">Resumen Contrato</Link>}</MDBDropdownItem>
+                                    <MDBDropdownItem link onClick={cerrarSesion}><b>Cerrar Sesión</b></MDBDropdownItem>
                                 </MDBDropdownMenu>
                             </MDBDropdown>
                         </MDBNavbarItem>

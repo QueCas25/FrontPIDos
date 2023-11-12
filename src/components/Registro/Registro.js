@@ -77,7 +77,7 @@ function Registrar() {
                                     />
                                     <div/>
                                 <div className='text-center'>
-                                    <MDBBtn className="mb-4 px-5" disabled={isSubmitting} type="submit">Registrar</MDBBtn>
+                                    <MDBBtn className="mb-4 px-5" disabled={isSubmitting} type="submit"><b>Registrar</b></MDBBtn>
                                 </div>
                                         </div>
                                     </div>
