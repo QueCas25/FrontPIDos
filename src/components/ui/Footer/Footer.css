@@ -19,4 +19,5 @@ footer {
 
 footer:hover{
     color: purple;
+    display: none;
 }

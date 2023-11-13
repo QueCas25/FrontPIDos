@@ -1,10 +1,10 @@
 /* Estilo para el contenedor principal */
 .my-5{
     display: flex;
-    background-image: url('img1.jpg');
     background-size: cover;
     background-position: center;
     padding: 10px;
+    background-color: #ffffff;
   }
   
   /* Estilo para el fondo del formulario */

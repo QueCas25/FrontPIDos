@@ -15,13 +15,13 @@
 }
 
 .fMgMlz{
-    color: #2a70e0;
+    color: rgb(98, 112, 241);
 }
 
 .btn-v{
     border-radius: 40px !important;
     margin-top: 20px !important;
-    color: rgb(223, 240, 255);
+    color: rgb(241, 98, 220);
 }
 
 .btn-v:hover{
@@ -32,18 +32,18 @@
     text-decoration: none !important;
 }
 
-h3{
+h5{
     display: flex;
     justify-content: center;
-    color: #043481;
+    color: white;
 }
 
 .bg-cv{
-    background-color: rgb(243, 248, 253) !important;
+    background-color: rgb(255, 255, 255)!important;
 }
 
 .form-outline .form-control{
-    background: rgb(251, 255, 252);
+    background: rgb(255, 255, 255);
 }
 
 select{
@@ -66,7 +66,8 @@ select{
     font-weight: bolder;
     padding-top: 50px;
     padding-left: 20px;
-    color: #2a70e0;;
+    color: purple;
+    justify-content: center;
 }
 
 .error{
@@ -93,4 +94,22 @@ select{
 
 .mb-4{
     margin-top: 0rem !important;
+}
+
+.titulin{
+    font-weight: bold;
+    color: purple;
+    padding-bottom: 5px;
+}
+
+.textinsecundarin{
+    font-weight: bold;
+    color: purple;
+    padding-bottom: 5px;
+}
+
+.textinsecundarin2{
+    font-weight: bold;
+    color: purple;
+    padding-bottom: 5px;
 }

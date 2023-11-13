@@ -4,9 +4,9 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-image: url(img1.jpg);
     background-size: cover;
     background-position: center;
+    background-color: #ffffff;
     padding: 10px;
   }
   

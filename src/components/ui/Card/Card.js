@@ -40,19 +40,19 @@ export default function BasicCard(props) {
                 <CardImage src={habitacion.imagen} alt="Habitación" />
             )}
 
-            <CardTitle variant="h5" component="div">
+            <CardTitle className='titulin' variant="h5" component="div">
                 {habitacion.nombre}
             </CardTitle>
 
-            <CompanyName color="textSecondary">
+            <CompanyName className='textinsecundarin' color="textSecondary">
                 {habitacion.numero}
             </CompanyName>
 
-            <CompanyName color="textSecondary">
+            <CompanyName className='textinsecundarin' color="textSecondary">
                 {habitacion.tipo.tipo}
             </CompanyName>
 
-            <Description>{habitacion.tipo.descripcion}</Description>
+            <Description className='textinsecundarin2' >{habitacion.tipo.descripcion}</Description>
         </StyledCard>
     );
 }
