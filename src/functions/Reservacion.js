@@ -1,15 +1,14 @@
 import axios from "axios";
-const baseURL =`https://flask-api-production-315e.up.railway.app/api/registro`;
+const baseURL =`https://flask-api-production-315e.up.railway.app/api/crearReservacion`;
 
-async function Registro(nombre, correo, password) {
+async function Reservar( correo, password,jwt) {
     const data = {
-        "nombre":nombre,
-       "email":correo,
+        "email":correo,
         "password":password,
     };
     try {
         const response = await axios.post(baseURL, data, {
-
+            headers: { Authorization: `Bearer: ${jwt}` }
         });
         if (response) {
             return response.data;
@@ -19,4 +18,4 @@ async function Registro(nombre, correo, password) {
     }
 }
 
-export default Registro;
+export default Reservar;

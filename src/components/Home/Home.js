@@ -1,6 +1,6 @@
 import React from 'react';
 import {MDBCarousel, MDBCarouselItem} from "mdb-react-ui-kit";
-
+import "./home.css"
 function Home(){
 
     return(

@@ -1,9 +1,6 @@
 /* Estilo para el contenedor principal */
-.MDBContainer {
+.my-5{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200vh;
     background-image: url('img1.jpg');
     background-size: cover;
     background-position: center;
@@ -41,7 +38,6 @@
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    margin-bottom: 15px;
     font-weight: bold;
     margin-bottom: 5px;
     color: purple;

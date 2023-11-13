@@ -1,0 +1,96 @@
+.v{
+    display: inline-block;
+    min-height: 100vh;
+    padding-top: 15px;
+}
+
+.vA{
+    display: inline-block;
+    min-height: 100vh;
+    padding-top: 80px;
+}
+
+.MuiStack-root{
+    margin: 15px;
+}
+
+.fMgMlz{
+    color: #2a70e0;
+}
+
+.btn-v{
+    border-radius: 40px !important;
+    margin-top: 20px !important;
+    color: rgb(223, 240, 255);
+}
+
+.btn-v:hover{
+    background-color: rgb(52, 150, 68) !important;
+}
+
+*{
+    text-decoration: none !important;
+}
+
+h3{
+    display: flex;
+    justify-content: center;
+    color: #043481;
+}
+
+.bg-cv{
+    background-color: rgb(243, 248, 253) !important;
+}
+
+.form-outline .form-control{
+    background: rgb(251, 255, 252);
+}
+
+select{
+    display: flex;
+}
+
+.filtro{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.tituloFiltro{
+    font-weight: bold;
+    color: #3B71BA;
+    padding-bottom: 5px;
+}
+
+.titFil{
+    display: flex;
+    font-weight: bolder;
+    padding-top: 50px;
+    padding-left: 20px;
+    color: #2a70e0;;
+}
+
+.error{
+    display: flex;
+    padding-top: 30px;
+    flex-direction: column;
+}
+
+.c{
+    display: flex;
+    min-height: 100vh;
+    min-width: 100vh;
+    align-items: center;
+}
+
+.jc-c{
+    display: flex;
+    justify-content: center;
+}
+
+.m-0{
+    margin: 0px !important;
+}
+
+.mb-4{
+    margin-top: 0rem !important;
+}

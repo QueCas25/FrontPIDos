@@ -14,7 +14,7 @@ export const NavLayout = () => (
 
 export const RequireAuth = ({children})=>{
     const user = useSelector((state) => state.user.value);
-    if(!user.userEmail){
+    if(!user){
         return <Navigate to="/Login"/>;
     }
     return children

@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Form, Formik } from 'formik';
 import { MDBBtn, MDBContainer, MDBCard, MDBCardBody } from 'mdb-react-ui-kit';
@@ -17,7 +17,7 @@ function Registrar() {
                 values.password,
             );
             if (usuario) {
-                navigate(`/Inicio`);
+                navigate(`/`);
             }
             actions.resetForm();
         } catch (error) {
