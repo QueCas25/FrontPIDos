@@ -2,34 +2,46 @@ import React from 'react';
 import styled from 'styled-components';
 import Typography from '@mui/material/Typography';
 
+
 const StyledCard = styled.div`
-  min-width: 60%;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 16px;
-  background-color: aliceblue;
+  width: 60%;
+  margin: 0 auto;
+  border: 1px solid #8a2be2; 
+  border-radius: 12px;
+  padding: 24px;
+  background-color: lavender; 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 `;
 
 const CardImage = styled.img`
-  max-width: 50%;
+  width: 100%; 
   height: auto;
-  margin-bottom: 12px;
-  border-radius: 4px;
+  margin-bottom: 16px;
+  border-radius: 8px;
+  display: block;
 `;
 
 const CardTitle = styled(Typography)`
-  font-size: 24px;
+  font-size: 28px;
   font-weight: bold;
+  color: purple; 
+  margin-bottom: 8px;
+  text-align: center;
 `;
 
 const CompanyName = styled(Typography)`
-  color: #666;
-  margin-bottom: 8px;
+  color: #6a5acd;
+  margin-bottom: 12px;
+  font-size: 18px;
+  text-align: center;
 `;
 
 const Description = styled(Typography)`
-  font-size: 16px;
+  font-size: 18px;
+  color: #333;
+  text-align: center;
 `;
+
 
 export default function BasicCard(props) {
     const { habitacion } = props;
@@ -44,11 +56,11 @@ export default function BasicCard(props) {
                 {habitacion.nombre}
             </CardTitle>
 
-            <CompanyName className='textinsecundarin' color="textSecondary">
+            <CompanyName className='textinsecundarin2' color="textSecondary">
                 {habitacion.numero}
             </CompanyName>
 
-            <CompanyName className='textinsecundarin' color="textSecondary">
+            <CompanyName className='textinsecundarin2' color="textSecondary">
                 {habitacion.tipo.tipo}
             </CompanyName>
 

@@ -13,7 +13,7 @@
   /* Estilo para el fondo del formulario */
   .bg-cv {
     position: absolute;
-    background-color: #ffffff;
+    background-color: lavender; 
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(136, 15, 184, 0.938);
     left: 50%;

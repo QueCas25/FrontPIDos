@@ -27,7 +27,9 @@ function Habitaciones() {
  });
  return (
      <div className="container-fluid v">
-      <h5 className="titFil">Habitaciones</h5>
+        <b>
+      <h3 className="titFil">Habitaciones</h3>
+      </b>
       {isLoading && <LinearProgress />}
       {!isLoading && (
           <div className="container-fluid v">
