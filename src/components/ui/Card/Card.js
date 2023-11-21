@@ -1,6 +1,7 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import styled from 'styled-components';
 import Typography from '@mui/material/Typography';
+import {Button} from "@mui/material";
 
 
 const StyledCard = styled.div`
@@ -44,7 +45,23 @@ const Description = styled(Typography)`
 
 
 export default function BasicCard(props) {
+    const [cuentaMessage, setCuentaMessage] = useState();
     const { habitacion } = props;
+
+    useEffect(() => {
+        // Add any logic you need when cuentaMessage changes
+        setTimeout(() => {
+            setCuentaMessage(null);
+        }, 3000);
+    }, [cuentaMessage]);
+
+    function reservar() {
+        const habitacionData = {
+            message: "Habitacion Reservada",
+            parametro: 1
+        };
+        setCuentaMessage(habitacionData.message);
+    }
 
     return (
         <StyledCard>
@@ -65,6 +82,7 @@ export default function BasicCard(props) {
             </CompanyName>
 
             <Description className='textinsecundarin2' >{habitacion.tipo.descripcion}</Description>
+            <Button variant="contained" size="large" className='btn-v' onClick={reservar}>Reservar</Button>
         </StyledCard>
     );
 }

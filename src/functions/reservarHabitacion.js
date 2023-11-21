@@ -1,7 +1,7 @@
 import axios from "axios";
 const baseURL =`https://flask-api-production-315e.up.railway.app/api/crearReservacion`;
 
-async function Reservar( correo, password,jwt) {
+async function reservarHabitacion( correo, password,jwt) {
     const data = {
         "email":correo,
         "password":password,
@@ -18,4 +18,4 @@ async function Reservar( correo, password,jwt) {
     }
 }
 
-export default Reservar;
+export default reservarHabitacion;
