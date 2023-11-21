@@ -63,7 +63,7 @@ function Registrar() {
                                         className='input-field'
                                         label="Contraseña"
                                         name="password"
-                                        type="input"
+                                        type="password"
                                         placeholder="*****"
                                     />
                                     <div/>
@@ -72,7 +72,7 @@ function Registrar() {
                                         className='input-field'
                                         label="Confirme Contraseña"
                                         name="confirmPassword"
-                                        type="input"
+                                        type="password"
                                         placeholder="*****"
                                     />
                                     <div/>

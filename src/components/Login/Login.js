@@ -61,7 +61,7 @@ function Login() {
                                                 className='input-field'
                                                 label="Contraseña"
                                                 name="password"
-                                                type="input"
+                                                type="password"
                                                 placeholder="*****"
                                             />
                                             <div/>
