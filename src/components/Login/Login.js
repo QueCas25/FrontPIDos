@@ -10,6 +10,7 @@ import {useDispatch} from "react-redux";
 import {set} from "../../features/user/userSlice";
 import {settoken} from "../../features/user/tokenSlice";
 import {decodeToken} from "react-jwt";
+import {setid} from "../../features/user/idSlice";
 function Login() {
     const navigate = useNavigate();
     const dispatch = useDispatch()
@@ -24,6 +25,7 @@ function Login() {
                 dispatch(settoken(usuario.token))
                 let user = decodeToken(usuario.token)
                 dispatch(set(user.sub))
+                dispatch(setid(user.id))
                 navigate(`/`);
             }
             actions.resetForm();

@@ -1,23 +1,16 @@
 footer {
     clear: both;
     width: 100%;
-    margin: 0px auto;
     background-color: #dd7aee !important;
     border: 1px solid lightgray;
     border-bottom: none;
     border-radius: 8px 8px 0px 0px;
     height: auto;
-    padding: 15px;
+    padding: 10px;
     text-align: Center;
     position: fixed;
     bottom: 0;
     color: white;
-    color: white;
     white-space: nowrap;
     font-weight: bolder;
-}
-
-footer:hover{
-    color: purple;
-    display: none;
 }

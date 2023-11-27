@@ -21,6 +21,7 @@ import {
     MDBCollapse,
 } from 'mdb-react-ui-kit';
 import {destroytoken} from "../../../features/user/tokenSlice";
+import {destroyid} from "../../../features/user/idSlice";
 
 
 
@@ -36,6 +37,7 @@ export default function Navbar(){
     function cerrarSesion(){
         dispatch(destroy());
         dispatch(destroytoken());
+        dispatch(destroyid());
         navigate('/')
     }
 
@@ -79,6 +81,7 @@ export default function Navbar(){
                                         <MDBDropdownItem link><b>{user}</b></MDBDropdownItem>
                                         <MDBDropdownItem link><b>Información Personal</b></MDBDropdownItem>
                                         <MDBDropdownItem link onClick={cerrarSesion}><b>Cerrar Sesión</b></MDBDropdownItem>
+                                        <MDBDropdownItem link onClick={() => navigate('/Reservaciones')}><b>Reservaciones</b></MDBDropdownItem>
                                     </MDBDropdownMenu>
                                 </MDBDropdown>
                             ) : (

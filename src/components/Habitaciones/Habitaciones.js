@@ -3,10 +3,8 @@ import { Link } from 'react-router-dom';
 import Stack from '@mui/material/Stack';
 import obtenerHabitaciones from '../../functions/obtenerHabitaciones';
 import LinearProgress from '@mui/material/LinearProgress';
-//import { LinearProgress } from '@mui/material';
 import BasicCard from '../ui/Card/Card';
 import './habitaciones.css'
-import {Button} from "@mui/material";
 
 
 function Habitaciones() {
@@ -37,7 +35,9 @@ function Habitaciones() {
           <div className="container-fluid v">
            <Stack container spacing={3}>
             {habitaciones.map((habitacion) => (
+                <Link to={`/Habitacion/${habitacion.id}`} target="_self">
                   <BasicCard habitacion={habitacion}/>
+                </Link>
             ))}
            </Stack>
           </div>

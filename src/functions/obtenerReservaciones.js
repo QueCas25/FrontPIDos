@@ -1,7 +1,7 @@
 import axios from "axios";
 
-async function obtenerHabitaciones() {
-    const baseURL =`https://flask-api-production-315e.up.railway.app/api/Habitaciones`;
+async function obtenerReservaciones(id) {
+    const baseURL =`https://flask-api-production-315e.up.railway.app/api/Reservacion/${id}`;
     try {
         const response = await axios.get(baseURL, {
         });
@@ -13,4 +13,4 @@ async function obtenerHabitaciones() {
     }
 }
 
-export default obtenerHabitaciones;
+export default obtenerReservaciones;

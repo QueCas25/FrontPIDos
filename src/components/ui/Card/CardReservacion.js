@@ -1,4 +1,4 @@
-import React  from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import Typography from '@mui/material/Typography';
 
@@ -10,14 +10,6 @@ const StyledCard = styled.div`
   padding: 24px;
   background-color: lavender; 
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-`;
-
-const CardImage = styled.img`
-  width: 100%; 
-  height: auto;
-  margin-bottom: 16px;
-  border-radius: 8px;
-  display: block;
 `;
 
 const CardTitle = styled(Typography)`
@@ -35,35 +27,32 @@ const CompanyName = styled(Typography)`
   text-align: center;
 `;
 
-const Description = styled(Typography)`
-  font-size: 18px;
-  color: #333;
-  text-align: center;
-`;
 
-
-export default function BasicCard(props) {
-    const { habitacion } = props;
+export default function ReservacionCard(props) {
+    const { reservacion } = props;
 
     return (
         <StyledCard>
-            {habitacion.imagen && (
-                <CardImage src={habitacion.imagen} alt="Habitación" />
-            )}
 
             <CardTitle className='titulin' variant="h5" component="div">
-                {habitacion.nombre}
+                Habitacion: {reservacion.habitacion}
             </CardTitle>
 
             <CompanyName className='textinsecundarin2' color="textSecondary">
-                {habitacion.numero}
+                Fecha Inicial: {reservacion.fecha_inicial}
             </CompanyName>
 
             <CompanyName className='textinsecundarin2' color="textSecondary">
-                {habitacion.tipo.tipo}
+                Dias Reservados: {reservacion.dias}
             </CompanyName>
 
-            <Description className='textinsecundarin2' >{habitacion.tipo.descripcion}</Description>
+            <CompanyName className='textinsecundarin2' color="textSecondary">
+               Reservado por : {reservacion.usuario}
+            </CompanyName>
+
+            <CompanyName className='textinsecundarin2' color="textSecondary">
+                Total : ${parseInt(reservacion.costo.replace('$', ''), 10) * reservacion.dias}
+            </CompanyName>
         </StyledCard>
     );
 }
